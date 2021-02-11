@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.contant{
+    width: 1100px;
+    height: auto;
+    margin: auto;
+}
+.clear::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.menu{}
+.menu ul{
+    text-align: right;
+    background: black;
+    padding: 30px;
+}
+.menu ul li{
+    display: inline-block;
+}
+.menu ul li a{
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+    text-decoration: none;
+}
+.menu ul li a:hover{}
+
+/* dropdown menu */
+
+.menu ul li{
+    position: relative;
+}
+.menu ul li ul {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 130px;
+	color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+    transform: scaley(0);
+    transform-origin: top center;
+
+}
+.menu ul li ul li{
+    display: block;
+}
+.menu ul li ul li a{
+    display: block;
+}
+.menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaley(1);
+}
+
+/* banner part */
+
+.banner {
+	background-image: url(./img/pngtree-world-environment-day-background-banner-image_150149.jpg);
+	padding: 140px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+button {
+	line-height: px;
+	margin-top: 20px;
+	margin-left: 30px;
+	width: 82px;
+	height: 35px;
+	background: black;
+	color: white;
+	font-size: 16px;
+}
+
+/* menu-part */
+
+.menu-part {
+	padding: 65px;
+	background: #444444;
+}
+.text-part {
+	width: 58%;
+	color: white;
+	font-size: 20px;
+	line-height: 32px;
+}
+.photo-part img{
+    width: 200px;
+    height: auto;
+    margin-left: 90px;
+}
+.photo-part{
+    width: 38%;
+}
+
+/* footer part */
+
+
+.p-part-1 img{
+    width: 150px;
+    height: auto;
+}
+.footer{
+    text-align: center;
+    background-color: #458b83;
+    padding-bottom: 20px;
+}
+.footer h1{
+    padding: 10px 0;
+    color: white;
+}
+.p-part-1{
+    width: 32%;
+    color: white;
+}
+.p-part-1 h3 i{
+    margin: 0 2px;
+}
